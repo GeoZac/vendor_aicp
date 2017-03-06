@@ -47,3 +47,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 -include vendor/aicp/configs/bootanimation.mk
+
+# Use the latest approved GMS identifiers unless running a signed build
+ifneq ($(SIGN_BUILD),true)
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT=Xiaomi/wt88047/wt88047:5.1.1/LMY47V/V8.2.1.0.LHJMIDL:user/release-keys \
+    PRIVATE_BUILD_DESC="wt88047-user 5.1.1 LMY47V V8.2.1.0.LHJMIDL release-keys"
+endif
