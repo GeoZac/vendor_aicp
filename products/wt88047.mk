@@ -31,9 +31,11 @@ TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_NAME := aicp_wt88047
-BOARD_VENDOR := wingtech
+BOARD_VENDOR := Xiaomi
 PRODUCT_DEVICE := wt88047
-PRODUCT_MANUFACTURER := Wingtech
+PRODUCT_MANUFACTURER := Xiaomi
+
+# I'm not sure this is same as original device
 PRODUCT_MODEL := Redmi 2
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
